@@ -1,0 +1,15 @@
+name: 1 - Workflow connexion Azure # Nom du Workflow
+
+on:
+  workflow_dispatch: # manuel https://docs.github.com/en/actions/using-workflows/triggering-a-workflow
+
+jobs:
+  
+  connexion-azure: # Nom du job   
+    runs-on: self-hosted # Runner machine qui execute le workflow https://docs.github.com/en/actions/using-github-hosted-runners/about-github-hosted-runners
+
+    
+    steps:
+      - name: Liste des ressources groupes dans un abonnement
+        run: |
+          echo "truc"
